@@ -4,6 +4,8 @@ import { auth } from "./firebase";
 import AddPetForm from "./AddPetForm";
 import ScheduleCareForm from "./ScheduleCareForm";
 import CareTaskList from "./CareTaskList";
+import PetList from "./PetList";
+
 
 
 
@@ -32,6 +34,8 @@ function App() {
       <AddPetForm />
       <ScheduleCareForm />
       <CareTaskList />
+      <PetList />
+
 
 
     </div>

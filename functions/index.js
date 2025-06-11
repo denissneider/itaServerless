@@ -22,7 +22,7 @@ exports.addPet = onCall(async (request) => {
     created: new Date(),
   });
 
-  return { message: "Pet added successfully." };
+  return { message: "Žival dodana" };
 });
 
 /// 2. Načrtovanje nege
@@ -43,14 +43,13 @@ exports.scheduleCare = onCall(async (request) => {
     created: new Date(),
   });
 
-  return { message: "Care task scheduled." };
+  return { message: "Opravilo shranjeno" };
 });
 
 /// 3. Obvestilo ob dodani negi (trigger)
 exports.onCareScheduled = onDocumentCreated("careTasks/{taskId}", async (event) => {
   const task = event.data.data();
   console.log(`Care task for pet ${task.petId} scheduled on ${task.date}: ${task.description}`);
-  // Tu bi lahko dodal e-mail pošiljanje ali logiko obveščanja
 });
 
 /// 4. Trigger za naloženo potrdilo (npr. zdravniško) NETESTIRANO
@@ -58,8 +57,6 @@ exports.onVetDocUploaded = onObjectFinalized(async (event) => {
   const filePath = event.data.name;
   const contentType = event.data.contentType;
   console.log(`Uploaded file: ${filePath} (${contentType})`);
-
-  // Lahko povežeš z živaljo ali zapisom v Firestore, če imaš ime ustrezno strukturirano
 });
 
 /// 5. Dnevni cron opomnik za nego
@@ -70,7 +67,6 @@ exports.sendDailyReminders = onSchedule("every day 07:00", async () => {
   snapshot.forEach(doc => {
     const task = doc.data();
     console.log(`Reminder: ${task.description} for pet ${task.petId} (user ${task.owner})`);
-    // Lahko dodaš pošiljanje emailov
   });
 
 /// 6. dodajanje slike
@@ -78,9 +74,8 @@ exports.onPetImageUploaded = onObjectFinalized("pets/{filename}", async (event) 
   const filePath = event.data.name;
   const contentType = event.data.contentType;
 
-  console.log(`🖼️ Nova datoteka naložena: ${filePath} (${contentType})`);
+  console.log(`Nova datoteka naložena: ${filePath} (${contentType})`);
 
-  // Primer: lahko shraniš tudi v Firestore, da logiraš nalaganje slik
   await db.collection("imageLogs").add({
     filePath,
     contentType,

@@ -1,0 +1,38 @@
+>  (node:26552) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+>  (Use `node --trace-deprecation ...` to show where the warning was created)
+i  functions: Beginning execution of "us-central1-addPet"
+i  functions: Finished "us-central1-addPet" in 2.2738ms
+i  functions: Beginning execution of "us-central1-addPet"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-addPet" in 334.4985ms
+i  functions: Beginning execution of "us-central1-addPet"
+i  functions: Finished "us-central1-addPet" in 1.5149ms
+i  functions: Beginning execution of "us-central1-addPet"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+>  {"severity":"ERROR","message":"Unhandled error Error: Missing required fields or user not authenticated.\n    at C:\\Users\\sneid\\OneDrive\\Desktop\\itaServerless\\functions\\index.js:15:11\n    at fixedLen (C:\\Users\\sneid\\OneDrive\\Desktop\\itaServerless\\functions\\node_modules\\firebase-functions\\lib\\v2\\providers\\https.js:157:37)\n    at C:\\Users\\sneid\\OneDrive\\Desktop\\itaServerless\\functions\\node_modules\\firebase-functions\\lib\\common\\providers\\https.js:544:32\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runFunction (C:\\Users\\sneid\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:506:9)\n    at async runHTTPS (C:\\Users\\sneid\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:531:5)\n    at async C:\\Users\\sneid\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:694:21"}
+i  functions: Finished "us-central1-addPet" in 2.3213ms
+>  (node:11908) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+>  (Use `node --trace-deprecation ...` to show where the warning was created)
+i  functions: Beginning execution of "us-central1-scheduleCare"
+i  functions: Finished "us-central1-scheduleCare" in 2.1591ms
+i  functions: Beginning execution of "us-central1-scheduleCare"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-scheduleCare" in 282.1153ms
+>  (node:24872) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+>  (Use `node --trace-deprecation ...` to show where the warning was created)
+i  functions: Beginning execution of "us-central1-onCareScheduled"
+>  Care task for pet K7Z15ft6UgYv6Z1S10Lt scheduled on 2025-06-07: Testna nega
+i  functions: Finished "us-central1-onCareScheduled" in 6.4029ms
+i  functions: Beginning execution of "us-central1-addPet"
+i  functions: Finished "us-central1-addPet" in 1.7308ms
+i  functions: Beginning execution of "us-central1-addPet"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Finished "us-central1-addPet" in 18.9722ms
+i  functions: Beginning execution of "us-central1-scheduleCare"
+i  functions: Finished "us-central1-scheduleCare" in 1.8687ms
+i  functions: Beginning execution of "us-central1-scheduleCare"
+>  {"verifications":{"app":"MISSING","auth":"VALID"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"DEBUG","message":"Callable request verification passed"}
+i  functions: Beginning execution of "us-central1-onCareScheduled"
+i  functions: Finished "us-central1-scheduleCare" in 13.9591ms
+>  Care task for pet nZGW1mAvSAdJDLoVYRkM scheduled on 2025-06-09: testna nega 2
+i  functions: Finished "us-central1-onCareScheduled" in 3.5621ms
